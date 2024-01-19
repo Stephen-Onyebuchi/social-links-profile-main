@@ -1,0 +1,89 @@
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter";
+    color: var(--White);
+}
+
+body {
+    display: grid;
+    /* place-items: center; */
+    place-content: center;
+    min-height: 100vh;
+    background-color: var(--Off-Black);
+}
+
+p {
+    font-size: 14px;
+}
+
+main {
+    background-color: var(--Dark-Grey);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+img {
+    border-radius: 50%;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.location {
+    color: var(--Green);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+button {
+    background-color: var(--Grey);
+    padding: 10px 90px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+}
+
+button:hover {
+    background-color: var(--Green);
+    color: var(--Grey);
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    body {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    main {
+        padding: 30px;
+    }
+
+    button {
+        width: 300px;
+    }
+}
